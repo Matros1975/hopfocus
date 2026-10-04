@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cursor Spaces Support</title>
+<meta name="description" content="Help and answers for Cursor Spaces.">
+<link rel="icon" href="icon.png">
+<style>
+:root{color-scheme:light dark;--bg:#fff;--fg:#1d1d1f;--mute:#6e6e73;--rule:#d2d2d7;--link:#0066cc}
+@media (prefers-color-scheme:dark){:root{--bg:#000;--fg:#f5f5f7;--mute:#a1a1a6;--rule:#38383a;--link:#2997ff}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.5 -apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",system-ui,sans-serif;-webkit-text-size-adjust:100%}
+main,header,footer{max-width:40rem;margin:0 auto;padding:0 1.25rem}
+header{padding-top:1.5rem}
+nav a{margin-right:1.25rem}
+main{padding-top:2.5rem;padding-bottom:2.5rem}
+h1{font-size:2.25rem;line-height:1.15;letter-spacing:-.02em;margin:0 0 .75rem}
+h2{font-size:1.25rem;margin:2rem 0 .5rem}
+p,ul,dl{margin:0 0 1rem}
+li{margin-bottom:.4rem}
+dt{font-weight:600;margin-top:1.5rem}
+dd{margin:.25rem 0 0}
+a{color:var(--link)}
+a:focus-visible{outline:2px solid var(--link);outline-offset:2px;border-radius:2px}
+.lede{font-size:1.25rem;color:var(--mute)}
+.icon{width:128px;height:128px;display:block;margin-bottom:1.5rem}
+.mute,footer{color:var(--mute);font-size:.875rem}
+footer{border-top:1px solid var(--rule);padding-top:1rem;padding-bottom:2rem}
+</style>
+</head>
+<body>
+<header><nav aria-label="Site"><a href="index.html">Cursor Spaces</a><a href="support.html" aria-current="page">Support</a><a href="privacy.html">Privacy</a></nav></header>
+<main>
+<h1>Support</h1>
+<p>Questions, bugs or ideas: <a href="https://github.com/Matros1975/cursor-spaces/issues">open an issue on GitHub</a>.</p>
+<h2>Common questions</h2>
+<dl>
+<dt>My shortcuts don't fire.</dt>
+<dd>Another app may be using &#8963;1 or &#8963;2 (or whichever keys you chose). Open Cursor Spaces Settings, click the shortcut, and press a different combination. Shortcuts must include &#8984; or &#8963;. If Settings shows a conflict, the system refused that combination, so pick another.</dd>
+<dt>It says a screen was not found.</dt>
+<dd>The display that shortcut points at is not connected or is asleep. Cursor Spaces never sends the pointer to a different display instead. Reconnect the display, or choose another one for that shortcut in Settings. With two identical monitors it asks you rather than guessing.</dd>
+<dt>What are the limits of Focus on Switch?</dt>
+<dd>Focus on Switch brings back the app you were using on the display you jump to. It works only with apps that have a window on screen there. It is free for 7 days, then Free use is limited to 10 switches a day; Pro is unlimited. Turn it off any time in Settings, and what it remembered is forgotten.</dd>
+<dt>I can't see the menu bar icon.</dt>
+<dd>On a Mac with a notch, a crowded menu bar can hide icons behind the notch. Hold &#8984; and drag other icons off the bar to make room, or quit an app you don't need in the menu bar. Your shortcuts keep working while the icon is hidden.</dd>
+<dt>How do I reset the app?</dt>
+<dd>Open Settings and use Reset to restore the default shortcuts and options. To start completely fresh, quit the app, delete it, and install it again.</dd>
+<dt>How do I uninstall it?</dt>
+<dd>Quit Cursor Spaces from its menu, then drag it from Applications to the Trash. If Launch at login is on, turn it off in Settings first so no login item is left behind. macOS keeps the app&#8217;s settings when the app is deleted; to remove them too, delete the folder <code>~/Library/Containers/com.andreikhrustaleu.CursorSpaces</code>.</dd>
+</dl>
+</main>
+<footer>&copy; 2026 Andrei Khrustaleu. Cursor Spaces is a local-only utility: no account, no network, no telemetry.</footer>
+</body>
+</html>

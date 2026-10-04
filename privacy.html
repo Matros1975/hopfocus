@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cursor Spaces Privacy</title>
+<meta name="description" content="Cursor Spaces works entirely on your Mac and collects no data.">
+<link rel="icon" href="icon.png">
+<style>
+:root{color-scheme:light dark;--bg:#fff;--fg:#1d1d1f;--mute:#6e6e73;--rule:#d2d2d7;--link:#0066cc}
+@media (prefers-color-scheme:dark){:root{--bg:#000;--fg:#f5f5f7;--mute:#a1a1a6;--rule:#38383a;--link:#2997ff}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.5 -apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",system-ui,sans-serif;-webkit-text-size-adjust:100%}
+main,header,footer{max-width:40rem;margin:0 auto;padding:0 1.25rem}
+header{padding-top:1.5rem}
+nav a{margin-right:1.25rem}
+main{padding-top:2.5rem;padding-bottom:2.5rem}
+h1{font-size:2.25rem;line-height:1.15;letter-spacing:-.02em;margin:0 0 .75rem}
+h2{font-size:1.25rem;margin:2rem 0 .5rem}
+p,ul,dl{margin:0 0 1rem}
+li{margin-bottom:.4rem}
+dt{font-weight:600;margin-top:1.5rem}
+dd{margin:.25rem 0 0}
+a{color:var(--link)}
+a:focus-visible{outline:2px solid var(--link);outline-offset:2px;border-radius:2px}
+.lede{font-size:1.25rem;color:var(--mute)}
+.icon{width:128px;height:128px;display:block;margin-bottom:1.5rem}
+.mute,footer{color:var(--mute);font-size:.875rem}
+footer{border-top:1px solid var(--rule);padding-top:1rem;padding-bottom:2rem}
+</style>
+</head>
+<body>
+<header><nav aria-label="Site"><a href="index.html">Cursor Spaces</a><a href="support.html">Support</a><a href="privacy.html" aria-current="page">Privacy</a></nav></header>
+<main>
+<h1>Privacy</h1>
+<p class="lede">Cursor Spaces works entirely on your Mac.</p>
+<ul>
+<li><strong>No account, no network, no telemetry.</strong> The app makes no network connections and includes no analytics or third-party SDKs. It collects no data.</li>
+<li><strong>No keystroke or mouse logging.</strong> It never records what you type or where you move the pointer. It reads the pointer position only at the moment you trigger one of its actions: a display jump or Back.</li>
+<li><strong>No permissions.</strong> It runs in the App Sandbox and asks for no Accessibility, Input Monitoring or Screen Recording access.</li>
+<li><strong>Focus on Switch.</strong> When this option is on and a shortcut takes the pointer to another display, Cursor Spaces brings back the app you were using there.
+<ul>
+<li>What it reads: at the moment you press the shortcut, which app is in front, and the position, size and owning app of the windows on screen. It never reads window titles or contents.</li>
+<li>When: only when you press a shortcut. Nothing is watched in the background.</li>
+<li>Where it lives: in memory only, as which app was last in front on each display. It is gone when you turn Focus on Switch off or quit the app.</li>
+</ul></li>
+<li><strong>Shortcuts and Siri.</strong> The App Intents Jump to Display and Go Back (Shortcuts app, Spotlight, Siri) run the same actions as the keyboard shortcuts, with the same privacy behavior. Nothing extra is read or sent.</li>
+<li><strong>What is stored, locally only.</strong> The following are kept in the app's own preferences on your Mac:
+<ul>
+<li>display identities: vendor and model numbers, serial number, display UUID and name;</li>
+<li>remembered positions on each display, stored as fractions of the screen;</li>
+<li>your shortcuts and preferences;</li>
+<li>the Focus on Switch daily allowance (a day and a count) and the date its 7-day trial started.</li>
+</ul>
+Return history (Back) is kept in memory only and is gone when the app quits.</li>
+<li><strong>Exports are yours.</strong> Both happen only when you click the button.
+<ul>
+<li>The Diagnostics export goes to the clipboard. It shortens display UUIDs and replaces serial numbers with &ldquo;present&rdquo; or &ldquo;none&rdquo;.</li>
+<li>The settings file goes to a location you choose. So that it can find the same displays on another Mac, it contains their identities in full: model, serial number, UUID and name. It contains no remembered positions. Share it only with people you would show those to.</li>
+</ul></li>
+<li><strong>Clipboard.</strong> Cursor Spaces never reads the clipboard. It writes to it only when you click Export in Diagnostics.</li>
+<li><strong>Purchases.</strong> When Pro becomes available it is a one-time purchase handled by the App Store. Cursor Spaces receives no payment or account details.</li>
+</ul>
+<p>To remove everything, quit Cursor Spaces, delete the app, then delete the folder <code>~/Library/Containers/com.andreikhrustaleu.CursorSpaces</code>. macOS keeps an app&#8217;s data folder when the app is deleted.</p>
+<p class="mute">Questions: <a href="https://github.com/Matros1975/cursor-spaces/issues">open an issue on GitHub</a>.</p>
+</main>
+<footer>&copy; 2026 Andrei Khrustaleu. Cursor Spaces is a local-only utility: no account, no network, no telemetry.</footer>
+</body>
+</html>
