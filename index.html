@@ -27,15 +27,10 @@ a:focus-visible{outline:2px solid var(--link);outline-offset:2px;border-radius:2
 .icon{width:128px;height:128px;display:block;margin-bottom:1.5rem}
 .mute,footer{color:var(--mute);font-size:.875rem}
 footer{border-top:1px solid var(--rule);padding-top:1rem;padding-bottom:2rem}
-table{width:100%;border-collapse:collapse;margin:0 0 1.5rem;font-size:.9375rem}
-th,td{padding:.6rem .5rem;border-bottom:1px solid var(--rule);text-align:left;vertical-align:top}
-thead th{font-weight:600;border-bottom-width:2px}
-thead th+th{text-align:center}
-tbody th{font-weight:400}
-td{width:8.5rem;text-align:center}
-tbody tr:last-child th,tbody tr:last-child td{font-weight:600;border-bottom:none}
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-@media (max-width:30rem){td{width:auto}}
+.price{border:1px solid var(--rule);border-radius:12px;padding:1.25rem 1.25rem .25rem;margin:0 0 1.5rem}
+.price dt{margin-top:0}
+.price dd{margin:.25rem 0 1rem}
+.promise{font-weight:600}
 </style>
 </head>
 <body>
@@ -58,38 +53,30 @@ tbody tr:last-child th,tbody tr:last-child td{font-weight:600;border-bottom:none
 
 <h2>Focus on Switch, without permissions</h2>
 <p>Bringing the right app back is what makes the jump useful, and HopFocus does it without Accessibility or any other permission. It notes which app is active only at the moment you press a shortcut, and never reads window titles or contents.</p>
-<p>Focus on Switch is free 10 times a day and unlimited for your first 7 days. Pro makes it unlimited.</p>
 
 <h2>Also</h2>
 <ul>
 <li>Remembers your spot on each display, so every jump lands where you were.</li>
-<li>&#8963;0 takes you back to where you were before the last jump (Pro).</li>
-<li>More than two displays, each with its own shortcut (Pro).</li>
+<li>&#8963;0 takes you back to where you were before the last jump.</li>
+<li>More than two displays, each with its own shortcut.</li>
 <li>Works with any arrangement, finds displays again after you replug, and tells identical monitors apart.</li>
-<li>A ring shows where the pointer landed; Pro adds Spotlight, Ripple, Crosshair and Big arrow.</li>
+<li>A brief highlight shows where the pointer landed: Ring, Spotlight, Ripple, Crosshair or Big arrow.</li>
 <li>Jump to Display and Go Back in the Shortcuts app, Spotlight and Siri.</li>
 </ul>
 
 <h2>Asks for nothing</h2>
 <p>No Accessibility, Input Monitoring or Screen Recording permission. HopFocus runs in the App Sandbox, has no account, makes no network connections and collects no data. It reads the pointer position and the active app only at the moment you press a shortcut.</p>
 
-<h2 id="free-pro">Free and Pro</h2>
-<table aria-labelledby="free-pro">
-<thead><tr><th scope="col">Feature</th><th scope="col">Free</th><th scope="col">Pro</th></tr></thead>
-<tbody>
-<tr><th scope="row">Jump between your built-in and one external display (&#8963;1, &#8963;2)</th><td><span aria-hidden="true">&#10003;</span><span class="sr">Included</span></td><td><span aria-hidden="true">&#10003;</span><span class="sr">Included</span></td></tr>
-<tr><th scope="row">Lands at your last spot on each display</th><td><span aria-hidden="true">&#10003;</span><span class="sr">Included</span></td><td><span aria-hidden="true">&#10003;</span><span class="sr">Included</span></td></tr>
-<tr><th scope="row">Focus on Switch: the app you were using comes back</th><td>10 times a day<br><span class="mute">unlimited for the first 7 days</span></td><td>Unlimited</td></tr>
-<tr><th scope="row">Back to where you were (&#8963;0)</th><td><span aria-hidden="true">&mdash;</span><span class="sr">Not included</span></td><td><span aria-hidden="true">&#10003;</span><span class="sr">Included</span></td></tr>
-<tr><th scope="row">More than two displays, each with its own shortcut</th><td><span aria-hidden="true">&mdash;</span><span class="sr">Not included</span></td><td><span aria-hidden="true">&#10003;</span><span class="sr">Included</span></td></tr>
-<tr><th scope="row">Identical monitors and replugging handled</th><td><span aria-hidden="true">&#10003;</span><span class="sr">Included</span></td><td><span aria-hidden="true">&#10003;</span><span class="sr">Included</span></td></tr>
-<tr><th scope="row">Pointer highlight styles</th><td>Ring</td><td>All five</td></tr>
-<tr><th scope="row">Shortcuts app, Spotlight and Siri</th><td>Jump to Display</td><td>Jump to Display and Go Back</td></tr>
-<tr><th scope="row">Diagnostics export</th><td><span aria-hidden="true">&mdash;</span><span class="sr">Not included</span></td><td><span aria-hidden="true">&#10003;</span><span class="sr">Included</span></td></tr>
-<tr><th scope="row">No permissions, no account, no network</th><td><span aria-hidden="true">&#10003;</span><span class="sr">Included</span></td><td><span aria-hidden="true">&#10003;</span><span class="sr">Included</span></td></tr>
-<tr><th scope="row">Price</th><td>Free</td><td>$6.99 once<br><span class="mute">price may vary by country</span></td></tr>
-</tbody>
-</table>
+<h2 id="price">Try it free for 14 days</h2>
+<dl class="price" aria-labelledby="price">
+<dt>Days 1 to 14</dt>
+<dd>Everything works: every display, Focus on Switch, Back and all highlight styles. Nothing to pay, and no payment details asked.</dd>
+<dt>After 14 days</dt>
+<dd>HopFocus stops working until you unlock it. Your settings are kept.</dd>
+<dt>Unlock</dt>
+<dd>$6.99, once. Yours for good, with Family Sharing. <span class="mute">The price may vary by country.</span></dd>
+</dl>
+<p class="promise">No subscription. Nothing is charged automatically when the trial ends: you only pay if you choose Unlock.</p>
 <p class="mute">Coming soon to the Mac App Store.</p>
 <p class="mute">Requires macOS 14 or later. <a href="support.html">Support</a> &middot; <a href="privacy.html">Privacy</a></p>
 </main>
